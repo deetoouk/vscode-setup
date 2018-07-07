@@ -1,0 +1,92 @@
+{
+    "private": true,
+    "scripts": {
+        "lint": "eslint --ext .js,.vue resources",
+        "lint-autofix": "eslint --ext .js,.vue resources --fix",
+        "eslint-check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.1",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "eslint": "^4.16.0",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-config-standard": "11.0.0-beta.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^5.2.1",
+        "eslint-plugin-prettier": "^2.6.2",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-vue": "^4.3.0",
+        "vue-eslint-parser": "^2.0.3"
+    },
+    "eslintConfig": {
+        "root": true,
+        "parser": "vue-eslint-parser",
+        "parserOptions": {
+            "parser": "babel-eslint",
+            "ecmaVersion": 2017,
+            "sourceType": "module",
+            "ecmaFeatures": {
+                "jsx": true,
+                "vue": true
+            }
+        },
+        "env": {
+            "es6": true,
+            "jquery": true,
+            "node": true,
+            "browser": true
+        },
+        "extends": [
+            "airbnb-base",
+            "plugin:vue/essential"
+        ],
+        "plugins": [
+            "vue"
+        ],
+        "rules": {
+            "indent": [
+                "error",
+                4,
+                {
+                    "SwitchCase": 1
+                }
+            ],
+            "max-len": [
+                "error",
+                {
+                    "code": 120
+                }
+            ],
+            "arrow-parens": [
+                "error",
+                "as-needed",
+                {
+                    "requireForBlockBody": false
+                }
+            ],
+            "no-plusplus": "off",
+            "vue/require-v-for-key": "off"
+        },
+        "globals": {
+            "_": false,
+            "axios": false,
+            "swal": false,
+            "Vue": false,
+            "Message": false,
+            "Ajax": false,
+            "Route": false,
+            "Mix": false,
+            "Form": false,
+            "eventBus": false,
+            "DocumentTouch": false,
+            "Buzz": false,
+            "moment": false
+        }
+    },
+    "jshintConfig": {
+        "esversion": 6
+    }
+}

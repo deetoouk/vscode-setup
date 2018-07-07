@@ -1,0 +1,49 @@
+{
+    "root": true,
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "vue": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "jquery": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": ["prettier", "airbnb-base", "plugin:vue/essential"],
+    "plugins": ["vue", "prettier"],
+    "rules": {
+        "prettier/prettier": "error",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
+        "no-plusplus": "off",
+        "vue/require-v-for-key": "off"
+    },
+    "globals": {
+        "_": false,
+        "axios": false,
+        "swal": false,
+        "Vue": false,
+        "Message": false,
+        "Ajax": false,
+        "Route": false,
+        "Mix": false,
+        "Form": false,
+        "eventBus": false,
+        "DocumentTouch": false,
+        "Buzz": false,
+        "moment": false
+    }
+}
