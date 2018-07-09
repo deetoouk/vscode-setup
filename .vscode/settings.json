@@ -1,2 +1,41 @@
 {
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "php.validate.executablePath": "/usr/local/opt/php@7.1/bin/php",
+    "php.validate.enable": true,
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,
+    "explorer.openEditors.visible": 0,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "trailing-spaces.trimOnSave": true,
+    "files.insertFinalNewline": true,
+    "editor.renderWhitespace": "all",
+    "editor.tabCompletion": true,
+    "editor.formatOnSave": true,
+    "eslint.nodePath": "~/.nvm/versions/node/v8.9.0/bin/node",
+    "composer.executablePath": "/usr/local/bin/composer",
+    "phpunit.args": ["--configuration", "./phpunit.xml"],
+    "php-cs-fixer.onsave": true,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.config":
+        "/Users/slavdachev/Projects/control/.vscode/.php_cs;/Users/slavdachev/Projects/control/.vscode/.php_cs.dist",
+    "explorer.autoReveal": false,
+    "php-cs-fixer.lastDownload": 1530869150953,
+    "importCost.typescriptExtensions": ["\\.vue?$"],
+    "eslint.validate": ["javascript", "javascriptreact", "vue", "vue-html"],
+    "eslint.options": {
+        "configFile": "/Users/slavdachev/Projects/control/.eslintrc.json"
+    },
+    "eslint.autoFixOnSave": true,
+    "vetur.validation.template": false,
+    "prettier.eslintIntegration": false,
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline"
+        }
+    },
+    "editor.rulers": [80, 120]
 }
