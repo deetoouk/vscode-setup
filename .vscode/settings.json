@@ -37,5 +37,6 @@
             "wrap_attributes": "force-expand-multiline"
         }
     },
-    "editor.rulers": [80, 120]
+    "editor.rulers": [80, 120],
+    "prettier.disableLanguages": ["vue", "markdown"]
 }
