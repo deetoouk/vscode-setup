@@ -16,7 +16,7 @@
         "node": true,
         "browser": true
     },
-    "extends": ["prettier", "airbnb-base", "plugin:vue/essential"],
+    "extends": ["airbnb-base", "prettier", "plugin:vue/essential"],
     "plugins": ["vue", "prettier"],
     "rules": {
         "prettier/prettier": "error",
@@ -29,7 +29,10 @@
         ],
         "arrow-parens": ["error", "as-needed", { "requireForBlockBody": false }],
         "object-curly-newline": ["error", { "consistent": true }],
-        "space-before-function-paren": ["error", { "anonymous": "ignore", "named": "never", "asyncArrow": "always" }],
+        "space-before-function-paren": [
+            "error",
+            { "anonymous": "ignore", "named": "never", "asyncArrow": "always" }
+        ],
         "no-plusplus": "off",
         "vue/require-v-for-key": "off",
         "no-confusing-arrow": "off",
